@@ -1,6 +1,8 @@
-#Terraform Configurations Files for Automation of Network Services, Home Lab and Home IoT devicess
+# Terraform Configurations Files for Automation of Network Services, Home Lab and Home IoT devicess
 
 This repository houses the Terraform configuration files used to automate the deployment and management of various services and infrastructure components within my home network. The goal is to define infrastructure as code, ensuring consistency, repeatability, and efficient management of resources.
+
+<hr>
 
 ## Purpose
 The primary purpose of this repository is to:
@@ -22,6 +24,8 @@ Before using these Terraform configurations, ensure you have the following insta
 * **Terraform CLI:** Download and install the latest version of Terraform from the official HashiCorp website.
 * **Cloud/Provider Credentials:** Ensure your Ubiquiti UniFi Controller (UDM-Pro) is accessible and you have the necessary API keys or credentials configured for any other providers you might use (e.g., Proxmox API access).
 * **Git:** For cloning this repository and managing versions.
+
+<hr>
 
 ## Usage
 Follow these general steps to use the Terraform configurations in this repository:
@@ -63,12 +67,16 @@ To remove all resources defined in a configuration, use the destroy command. Use
 terraform destroy
 ```
 
+<hr>
+
 ## Repository Structure
 The repository is organised to promote modularity and reusability:
-* ./environments/: Contains top-level configurations for different environments (e.g., production, development).
-* ./modules/: Contains reusable Terraform modules for common infrastructure patterns (e.g., network_vlan_setup, ubiquiti_ap_config, proxmox_vm).
-* ./providers/: (Optional) Custom provider definitions if needed.
-* README.md: This file.
+* **./environments/:** Contains top-level configurations for different environments (e.g., production, development).
+* **./modules/:** Contains reusable Terraform modules for common infrastructure patterns (e.g., network_vlan_setup, ubiquiti_ap_config, proxmox_vm).
+* **./providers/:** (Optional) Custom provider definitions if needed.
+* **README.md:** This file.
+
+<hr>
 
 ## Contributing
 Contributions are welcome! If you have suggestions for improvements, bug fixes, or new automation ideas, please feel free to:
