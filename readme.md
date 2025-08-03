@@ -25,8 +25,6 @@ Before using these Terraform configurations, ensure you have the following insta
 * **Cloud/Provider Credentials:** Ensure your Ubiquiti UniFi Controller (UDM-Pro) is accessible and you have the necessary API keys or credentials configured for any other providers you might use (e.g., Proxmox API access).
 * **Git:** For cloning this repository and managing versions.
 
-<hr>
-
 ## Usage
 Follow these general steps to use the Terraform configurations in this repository:
 1. **Clone the Repository:**
@@ -67,16 +65,12 @@ To remove all resources defined in a configuration, use the destroy command. Use
 terraform destroy
 ```
 
-<hr>
-
 ## Repository Structure
 The repository is organised to promote modularity and reusability:
 * **./environments/:** Contains top-level configurations for different environments (e.g., production, development).
 * **./modules/:** Contains reusable Terraform modules for common infrastructure patterns (e.g., network_vlan_setup, ubiquiti_ap_config, proxmox_vm).
 * **./providers/:** (Optional) Custom provider definitions if needed.
 * **README.md:** This file.
-
-<hr>
 
 ## Contributing
 Contributions are welcome! If you have suggestions for improvements, bug fixes, or new automation ideas, please feel free to:
